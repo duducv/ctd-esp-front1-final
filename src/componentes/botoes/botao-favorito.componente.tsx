@@ -7,7 +7,13 @@ import "./botao-favorito.css";
  *
  * @returns Elemento JSX
  */
-const BotaoFavorito = ({ isFavorito, onClick }) => {
+
+interface BotaoFavoritoProps {
+  isFavorito: boolean
+  onClick: () => void
+}
+
+const BotaoFavorito = ({ isFavorito, onClick }: BotaoFavoritoProps) => {
   const src = isFavorito ? "/imagenes/star-filled.png" : "/imagenes/star.png";
 
   return (

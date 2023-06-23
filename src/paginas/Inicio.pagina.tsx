@@ -10,6 +10,7 @@ import Paginacao from "../componentes/paginacao/paginacao.componente";
  *
  * @returns Página inicio
  */
+
 const PaginaInicio = () => {
   return (
     <div className="container">

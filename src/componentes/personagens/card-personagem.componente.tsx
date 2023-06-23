@@ -9,16 +9,22 @@ import "./card-personagem.css";
  *
  * @returns Elemento JSX
  */
-const CardPersonagem = () => {
+
+interface ICardPersonagemProps {
+  imageUrl: string,
+  name: string
+}
+
+const CardPersonagem = ({ imageUrl, name }: ICardPersonagemProps) => {
   return (
     <div className="card-personagem">
       <img
-        src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-        alt="Rick Sanchez"
+        src={imageUrl}
+        alt={name}
       />
       <div className="card-personagem-body">
-        <span>Rick Sanchez</span>
-        <BotaoFavorito isFavorito={false} />
+        <span>{name}</span>
+        <BotaoFavorito isFavorito={false} onClick={() => null}/>
       </div>
     </div>
   );
