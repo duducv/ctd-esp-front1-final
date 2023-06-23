@@ -318,3 +318,4 @@ Agora sim, podemos ir componente por componente integrando com o Redux através 
 _Dica: Lembre-se que você pode ver o que está acontecendo no estado através da extensão ReduxDevTools do Chrome e, se necessário, depurar para encontrar possíveis erros._
 
 Boa sorte e sucesso!
+# rickymorty
