@@ -2,10 +2,9 @@ import { AnyAction } from "@reduxjs/toolkit";
 import { IPagination } from "../../dto/IPagination";
 
 const INITAL_STATE: IPagination = {
-    count: 0,
-    pages: 0,
-    next: null,
-    prev: null,
+    total: 0,
+    actual: 1,
+    charsToShow: []
 }
 
 export enum PAGINATION_REDUCER_ENUM {

@@ -5,7 +5,6 @@ import charReducer from "./reducers/charReducer";
 import favoritesReducer from "./reducers/favoritesReducer";
 import filterReducer from "./reducers/filterReducer";
 import paginationReducer from "./reducers/paginationReducer";
-import storeInterceptorMiddleware from "./middlewares/storeInterceptor";
 
 const rootReducer = combineReducers({
     filterReducer,

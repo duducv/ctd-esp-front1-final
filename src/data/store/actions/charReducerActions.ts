@@ -21,8 +21,10 @@ async function fetchAllChars() {
             }
         }
 
+        console.log('requisicao', `https://rickandmortyapi.com/api/character/${queryParams}`)
         const finalResponse = await fetch(`https://rickandmortyapi.com/api/character/${queryParams}`)
         const finalResponseJson: IChars[] = await finalResponse.json()
+        console.log('resposta', finalResponseJson)
         return finalResponseJson
     } catch (err) {
         return []

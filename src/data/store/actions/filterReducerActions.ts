@@ -1,12 +1,10 @@
 import { Dispatch } from "react";
-import { FILTERREDUCERENUM } from "../reducers/filterReducer";
-import { AnyAction } from "@reduxjs/toolkit";
+import { FILTER_REDUCER_ENUM } from "../reducers/filterReducer";
 import { IActionType } from "./types";
 
 export function changeFilterInput(
-     dispatch: Dispatch<VoidFunction | IActionType<FILTERREDUCERENUM, string>>,
+     dispatch: Dispatch<VoidFunction | IActionType<FILTER_REDUCER_ENUM, string>>,
      payload: string
      ) {
-
-    dispatch({ type: FILTERREDUCERENUM.CHANGE_TEXT, payload})
+    dispatch({ type: FILTER_REDUCER_ENUM.CHANGE_TEXT, payload })
 }

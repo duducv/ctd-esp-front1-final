@@ -1,4 +1,3 @@
-import { IPagination } from "./IPagination"
 
 export interface IChars {
     id: number
@@ -20,8 +19,15 @@ type LocationProps = {
     url: string
 }
 
+type IInfo = {
+    count: number,
+    pages: number,
+    next: string | null,
+    prev: string | null
+}
+
 
 export interface ICharsFullResponse {
-    info: IPagination,
+    info: IInfo,
     results: IChars[]
 }

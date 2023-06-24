@@ -19,6 +19,9 @@ const GradePersonagem = () => {
   const dispatch = useDispatch();
   const chars = useSelector(({ charReducer }) => charReducer)
 
+
+  console.log(chars)
+
   useEffect(() => {
     // impedindo que requisições adicionais (desnecessárias) sejam feitas no primeiro load.
     if (chars.length === 0) {

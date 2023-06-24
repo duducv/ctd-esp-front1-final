@@ -1,4 +1,6 @@
+import { useDispatch } from "react-redux";
 import "./paginacao.css";
+import { goToNextPage } from "../../data/store/actions/paginationReducerAction";
 
 /**
  * Componente que contém os botões para paginar
@@ -9,12 +11,13 @@ import "./paginacao.css";
  * @returns Elemento JSX
  */
 const Paginacao = () => {
+  const dispatch = useDispatch()
   return (
     <div className="paginacao">
       <button disabled={true} className={"primary"}>
         Anterior
       </button>
-      <button disabled={false} className={"primary"}>
+      <button disabled={false} className={"primary"} onClick={() => goToNextPage(dispatch)}>
         Próximo
       </button>
     </div>
